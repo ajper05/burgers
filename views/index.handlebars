@@ -1,0 +1,38 @@
+<h1>Not Wendy's</h1>
+
+
+<div class= "burgers">
+  <h2>Welcome to Not Wendy's! Here are the burgers we have ready:</h2>
+  <ul>
+    {{#each burgers}}
+    {{#unless devoured}}
+    {{> burgers/burger devoured=false}}
+    {{/unless}}
+    {{/each}}
+  </ul>
+</div>
+
+<div class= "devoured">
+<h2>Burgers that you've already eaten:</h2>
+<ul>
+  {{#each burgers}}
+  {{#if devoured}}
+  {{> burgers/burger devoured=true}}
+  {{/if}}
+  {{/each}}
+</ul>
+</div>
+
+
+<div class="adder">
+<h2>Order a new burger:</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="burg">Burger Name:</label>
+    <input type="text" id="burg" name="name">
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form>
+</div>
