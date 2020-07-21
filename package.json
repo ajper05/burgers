@@ -1,0 +1,25 @@
+{
+  "name": "burgers",
+  "version": "1.0.0",
+  "description": "Node Express Handlebars Homework Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajper05/burgers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajper05/burgers/issues"
+  },
+  "homepage": "https://github.com/ajper05/burgers#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  }
+}
